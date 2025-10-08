@@ -21,8 +21,8 @@ Aplicación web moderna para gestión de finanzas personales desarrollada con Re
 
 ## Copyright
 
-Copyright © 2025 [Tu Nombre]. All rights reserved.
+Copyright © 2025 Iram Remigio Alvarez Rocha. All rights reserved.
 
-Este software y su código fuente son propiedad exclusiva de [Tu Nombre]. 
+Este software y su código fuente son propiedad exclusiva de Iram Remigio Alvarez Rocha. 
 Ninguna parte de este software puede ser reproducida, distribuida o 
 utilizada sin autorización previa y por escrito del propietario.
