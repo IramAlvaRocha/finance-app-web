@@ -1,6 +1,5 @@
-import { CustomHeading } from "@/components/CustomHeading"
-import { UserLayout } from "../Layout/UserLayout"
 import { Helmet } from "react-helmet"
+import { DashboardCard } from "../Components/DashboardCard"
 
 export const Dashboard = () => {
   return (
@@ -8,9 +7,7 @@ export const Dashboard = () => {
      <Helmet>
       <title>Dashboard | Finance App</title>
      </Helmet>
-     <h1 className="text-gray-800">
-      Hola
-     </h1>
+     <DashboardCard />
     </>
   )
 }
