@@ -5,6 +5,8 @@ import { AuthLayout } from "@/auth/Layout/AuthLayout";
 import { Register } from "@/auth/pages/Register";
 import { UserLayout } from "@/users/Layout/UserLayout";
 import { Dashboard } from "@/users/pages/Dashboard";
+import { SettingsPage } from "@/users/pages/Settings";
+import { AllTransactions } from "@/transactions/pages/AllTransactions";
 
 export const router = createBrowserRouter([
   {
@@ -12,25 +14,34 @@ export const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/auth",
-    element: <AuthLayout />,
+    element: <AuthLayout />,  // Sin path aquí
     children: [
       {
-        path: "login",
+        path: "login",  // Ruta completa: /login
         element: <Login />
       },
       {
-        path: "register",
+        path: "register",  // Ruta completa: /register
         element: <Register />
       }
     ]
   },
   {
-    path: "/users",
-    element: <UserLayout />,
-    children: [{
-      path: "dashboard",
-      element: <Dashboard />
-    }]
+    element: <UserLayout />,  // Sin path aquí
+    children: [
+      {
+        path: "dashboard",  // Ruta completa: /dashboard
+        element: <Dashboard />
+      },
+      {
+        path: "settings",  // Ruta completa: /settings
+        element: <SettingsPage />
+      },
+      {
+        path: "transactions/all",
+        element: <AllTransactions />
+      }
+    ]
   }
 ]);
+
