@@ -28,7 +28,7 @@ export const HeroSection = () => {
                         <Button
                             size="lg"
                             className="text-lg px-8"
-                            onClick={() => navigate("/auth/register")}
+                            onClick={() => navigate("/register")}
                         >
                             Comenzar Ahora
                         </Button>
@@ -36,7 +36,7 @@ export const HeroSection = () => {
                             size="lg"
                             variant="outline"
                             className="text-lg px-8 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white"
-                            onClick={() => navigate("/auth/login")}
+                            onClick={() => navigate("/login")}
                         >
                             Iniciar Sesión
                         </Button>

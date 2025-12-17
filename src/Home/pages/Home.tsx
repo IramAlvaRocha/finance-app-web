@@ -1,16 +1,10 @@
-import { useEffect } from "react";
-
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet-async"
 
 import { HeroSection } from "../components/HeroSection";
 import { FeaturesSection } from "../components/FeaturesSection";
 import { Footer } from "../components/Footer";
 
 export const Home = () => {
-
-  useEffect(() => {
-
-  });
 
   return (
     <>

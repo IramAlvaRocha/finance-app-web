@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Link } from "react-router";
 
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import * as z from "zod";
@@ -152,7 +152,7 @@ export const Register = () => {
                 <FormItem>
                   <FormLabel>Contraseña</FormLabel>
                   <FormControl>
-                    <Input placeholder="Escribe una contraseña" type="text" {...field} />
+                    <Input placeholder="Escribe una contraseña" type="password" {...field} />
                   </FormControl>
                   <PasswordStregthMeter password={field.value} />
                   <FormMessage />
@@ -166,7 +166,7 @@ export const Register = () => {
                 <FormItem>
                   <FormLabel>Confirma tu contraseña</FormLabel>
                   <FormControl>
-                    <Input placeholder="Escribe nuevamente tu contraseña" type="text" {...field} />
+                    <Input placeholder="Escribe nuevamente tu contraseña" type="password" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>

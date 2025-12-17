@@ -52,11 +52,6 @@ export const UserLayout = () => {
               <div className="text-sm hidden sm:block">
                 <p className="font-medium text-foreground">Iram Alvarez</p>
               </div>
-              <div className="absolute w-auto -bottom-9 border">
-                <a>
-                  Cerrar sesion
-                </a>
-              </div>
             </div>
           </div>
         </div>
